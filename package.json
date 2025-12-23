@@ -1,0 +1,29 @@
+{
+  "name": "slidev-theme-dark-particle",
+  "version": "1.0.0",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "author": "mikewootc <wytabc@126.com>",
+  "license": "MIT",
+  "description": "Dark particle theme for Slidev",
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "mono": "Fira Code",
+        "sans": "Avenir Next,Nunito Sans",
+        "local": "Avenir Next"
+      }
+    }
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.11.0",
+    "vue": "^3.5.25"
+  }
+}

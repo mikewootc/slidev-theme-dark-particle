@@ -1,0 +1,126 @@
+/* 全局基础全屏样式（必须加！） */
+html, body, .slidev-app, .slidev-slide-container, .slidev-slide {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* 全局配色变量（青色科技风） */
+:root {
+  --slidev-theme-primary: #22d3ee;    /* 主色：亮青色 */
+  --slidev-theme-secondary: #06b6d4;  /* 次主色：深青色 */
+  --slidev-theme-accent: #0e7490;     /* 强调色：蓝青色 */
+  --slidev-theme-bg: #0f172a;         /* 背景色：深灰蓝（覆盖全屏） */
+  --slidev-theme-text: #e2e8f0;       /* 正文色：浅灰 */
+  --slidev-theme-text-light: #94a3b8; /* 浅色文本：淡灰 */
+  --slidev-theme-border: #1e293b;     /* 边框色：中灰蓝 */
+}
+
+/* 全局背景与布局重置（确保全屏） */
+.slidev-layout {
+  background-color: var(--slidev-theme-bg) !important;
+  color: var(--slidev-theme-text);
+  padding: 2rem 4rem;
+  height: 100% !important; /* 强制占满幻灯片高度 */
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-xl;
+  }
+
+  p {
+    /* @apply my-4 leading-6; */
+    @apply text-xl;
+  }
+
+  /* 列表样式 */
+  ul {
+    list-style: disc;
+    /* list-style: square; */
+    padding-left: 1.5rem;
+    gap: 0.8rem;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    color: var(--slidev-theme-text);
+    /* font-size: 1.2rem; */
+    @apply text-xl;
+    line-height: 1.6;
+    /* margin-top: 1rem; */
+    @apply my-4 leading-6;
+  }
+
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--slidev-theme-primary);
+  font-weight: 700;
+}
+
+
+/* 强调文本样式 */
+.text-cyan-300, .text-cyan-400 {
+  color: var(--slidev-theme-primary) !important;
+  font-weight: 600;
+}
+
+/* 卡片样式 */
+.bg-gray-800\/50 {
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+.border-cyan-500\/30 {
+  border: 1px solid rgba(34, 211, 238, 0.3) !important;
+  border-radius: 0.5rem;
+}
+
+/* 动态背景容器（全局）—— 确保覆盖全屏 */
+.particle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.2; /* 粒子透明度，可调整 */
+}
+
+/* 内容层（确保在粒子上层） */
+.slide-content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+
+/* 确保Slidev的默认容器不遮挡粒子 */
+.slidev-app {
+  position: relative;
+  z-index: 1;
+}
