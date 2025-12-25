@@ -10,7 +10,7 @@ html, body, .slidev-app, .slidev-slide-container, .slidev-slide {
   --slidev-theme-primary: #22d3ee;    /* 主色：亮青色 */
   --slidev-theme-secondary: #06b6d4;  /* 次主色：深青色 */
   --slidev-theme-accent: #0e7490;     /* 强调色：蓝青色 */
-  --slidev-theme-bg: #0f172a;         /* 背景色：深灰蓝（覆盖全屏） */
+  --slidev-theme-bg: #08101a;         /* 背景色：深灰蓝（覆盖全屏） */
   --slidev-theme-text: #e2e8f0;       /* 正文色：浅灰 */
   --slidev-theme-text-light: #94a3b8; /* 浅色文本：淡灰 */
   --slidev-theme-border: #1e293b;     /* 边框色：中灰蓝 */
